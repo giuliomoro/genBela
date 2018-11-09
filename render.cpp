@@ -12,7 +12,7 @@ void Bela_userSettings(BelaInitSettings *settings)
 
 bool setup(BelaContext *context, void *userData)
 {
-	if(!(context->flags & BELA_FLAG_INTERLEAVED))
+	if(context->flags & BELA_FLAG_INTERLEAVED)
 	{
 		fprintf(stderr, "You need a non-interleaved buffer\n");
 		return 0;
