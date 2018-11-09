@@ -46,7 +46,7 @@ void render(BelaContext *context, void *userData)
 	for (unsigned int i = 0; i < context->audioOutChannels; i++) {
 		op[i] = (t_sample*)context->audioOut + (i * nFrames);
 	}
-	for (unsigned int i = 0; i < context->audioOutChannels; i++) {
+	for (unsigned int i = 0; i < context->analogOutChannels; i++) {
 		op[i + context->audioOutChannels] = (t_sample*)context->analogOut + (i * nFrames);
 	}
 
