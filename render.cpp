@@ -7,7 +7,7 @@ void Bela_userSettings(BelaInitSettings *settings)
 {
 	settings->uniformSampleRate = 1;
 	settings->interleave = 0;
-	// settings->analogOutputsPersist = 0; // only disable persistence if you are handling all the analog outs as signals
+	settings->analogOutputsPersist = 0;
 }
 
 bool setup(BelaContext *context, void *userData)
